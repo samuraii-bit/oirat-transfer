@@ -27,47 +27,33 @@ document.addEventListener('DOMContentLoaded', function() {
     form.addEventListener('submit', function(e) {
         e.preventDefault();
 
-        const phoneInput = document.getElementById('phone');
-        // Удаляем всё, кроме цифр, чтобы проверить длину
-        const cleanPhone = phoneInput.value.replace(/\D/g, '');
-
-        if (cleanPhone.length < 11) {
-            alert("Пожалуйста, введите полный номер телефона (11 цифр).");
-            phoneInput.focus();
-            return; // Прекращаем выполнение, заявка не уйдет
-        }
-        
-        // Блокируем кнопку
-        const originalText = btn.innerText;
-        btn.disabled = true;
-        btn.innerText = "Отправка...";
-
         const formData = new FormData(form);
         const params = new URLSearchParams();
 
-        // Явно перебираем данные из формы, чтобы ничего не потерять
-        formData.forEach((value, key) => {
-            params.append(key, value);
-        });
+        // Собираем ВСЕ данные из полей формы
+        params.append('customerName', document.getElementById('name').value);
+        params.append('phone', document.getElementById('phone').value);
+        params.append('departure', document.getElementById('departure').value);
+        params.append('destination', document.getElementById('destination').value);
+        params.append('date', document.getElementById('date').value);
+        params.append('message', document.getElementById('message').value);
+        
+        // ВОТ ЭТИ ДВА ПОЛЯ МЫ ТЕРЯЛИ:
+        params.append('serviceClass', document.getElementById('serviceClass').value);
+        params.append('passengers', document.getElementById('passengers').value);
 
+        // Отправка (API_URL берется из config.js)
         fetch(`${CONFIG.API_URL}?${params.toString()}`, {
-            method: 'GET', // Google Apps Script лучше всего работает с GET для doGet
-            mode: 'no-cors' 
+            method: 'GET',
+            mode: 'no-cors'
         })
         .then(() => {
-            alert("✅ Заявка отправлена! Проверьте Telegram.");
+            alert("✅ Заявка отправлена!");
             form.reset();
         })
-        .catch(err => {
-            console.error("Ошибка:", err);
-            alert("❌ Ошибка при отправке.");
-        })
-        .finally(() => {
-            btn.disabled = false;
-            btn.innerText = "Отправить";
-        });
+        .catch(err => console.error("Ошибка:", err));
     });
-
+    
     setTimeout(() => {
         const toast = document.createElement('div');
         toast.innerHTML = 'Привет!';
