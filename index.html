@@ -1,1375 +1,269 @@
 <!DOCTYPE html>
-<html lang="ru"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<html lang="ru">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oirat-Transfer - Трансфер из Москвы, Тамбова, Тулы, 
-Владимира, Нижнего Новгорода в зону СВО: Донецк, Луганск, Горловку и 
-города ДНР/ЛНР</title>
-    <script src="a_data/email.min.js"></script>
-    <script src="a_data/browser@4"></script><style>/*! tailwindcss v4.1.18 | MIT License | https://tailwindcss.com */
-@layer properties;
-@layer theme, base, components, utilities;
-@layer theme {
-  :root, :host {
-    --font-sans: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-    'Noto Color Emoji';
-    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
-    monospace;
-    --color-green-400: oklch(79.2% 0.209 151.711);
-    --color-green-500: oklch(72.3% 0.219 149.579);
-    --color-green-600: oklch(62.7% 0.194 149.214);
-    --color-emerald-600: oklch(59.6% 0.145 163.225);
-    --color-blue-300: oklch(80.9% 0.105 251.813);
-    --color-blue-400: oklch(70.7% 0.165 254.624);
-    --color-blue-500: oklch(62.3% 0.214 259.815);
-    --color-blue-600: oklch(54.6% 0.245 262.881);
-    --color-blue-900: oklch(37.9% 0.146 265.522);
-    --color-indigo-400: oklch(67.3% 0.182 276.935);
-    --color-purple-400: oklch(71.4% 0.203 305.504);
-    --color-purple-500: oklch(62.7% 0.265 303.9);
-    --color-purple-600: oklch(55.8% 0.288 302.321);
-    --color-purple-900: oklch(38.1% 0.176 304.987);
-    --color-gray-300: oklch(87.2% 0.01 258.338);
-    --color-gray-400: oklch(70.7% 0.022 261.325);
-    --color-gray-800: oklch(27.8% 0.033 256.848);
-    --color-gray-900: oklch(21% 0.034 264.665);
-    --color-black: #000;
-    --color-white: #fff;
-    --spacing: 0.25rem;
-    --container-sm: 24rem;
-    --container-2xl: 42rem;
-    --container-4xl: 56rem;
-    --text-sm: 0.875rem;
-    --text-sm--line-height: calc(1.25 / 0.875);
-    --text-base: 1rem;
-    --text-base--line-height: calc(1.5 / 1);
-    --text-lg: 1.125rem;
-    --text-lg--line-height: calc(1.75 / 1.125);
-    --text-xl: 1.25rem;
-    --text-xl--line-height: calc(1.75 / 1.25);
-    --text-2xl: 1.5rem;
-    --text-2xl--line-height: calc(2 / 1.5);
-    --text-3xl: 1.875rem;
-    --text-3xl--line-height: calc(2.25 / 1.875);
-    --text-4xl: 2.25rem;
-    --text-4xl--line-height: calc(2.5 / 2.25);
-    --text-5xl: 3rem;
-    --text-5xl--line-height: 1;
-    --text-7xl: 4.5rem;
-    --text-7xl--line-height: 1;
-    --font-weight-bold: 700;
-    --font-weight-black: 900;
-    --leading-relaxed: 1.625;
-    --radius-lg: 0.5rem;
-    --radius-xl: 0.75rem;
-    --radius-2xl: 1rem;
-    --radius-3xl: 1.5rem;
-    --ease-out: cubic-bezier(0, 0, 0.2, 1);
-    --blur-md: 12px;
-    --blur-xl: 24px;
-    --default-transition-duration: 150ms;
-    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    --default-font-family: var(--font-sans);
-    --default-mono-font-family: var(--font-mono);
-  }
-}
-@layer base {
-  *, ::after, ::before, ::backdrop, ::file-selector-button {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    border: 0 solid;
-  }
-  html, :host {
-    line-height: 1.5;
-    -webkit-text-size-adjust: 100%;
-    tab-size: 4;
-    font-family: var(--default-font-family, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji');
-    font-feature-settings: var(--default-font-feature-settings, normal);
-    font-variation-settings: var(--default-font-variation-settings, normal);
-    -webkit-tap-highlight-color: transparent;
-  }
-  hr {
-    height: 0;
-    color: inherit;
-    border-top-width: 1px;
-  }
-  abbr:where([title]) {
-    -webkit-text-decoration: underline dotted;
-    text-decoration: underline dotted;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    font-size: inherit;
-    font-weight: inherit;
-  }
-  a {
-    color: inherit;
-    -webkit-text-decoration: inherit;
-    text-decoration: inherit;
-  }
-  b, strong {
-    font-weight: bolder;
-  }
-  code, kbd, samp, pre {
-    font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace);
-    font-feature-settings: var(--default-mono-font-feature-settings, normal);
-    font-variation-settings: var(--default-mono-font-variation-settings, normal);
-    font-size: 1em;
-  }
-  small {
-    font-size: 80%;
-  }
-  sub, sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-  }
-  sub {
-    bottom: -0.25em;
-  }
-  sup {
-    top: -0.5em;
-  }
-  table {
-    text-indent: 0;
-    border-color: inherit;
-    border-collapse: collapse;
-  }
-  :-moz-focusring {
-    outline: auto;
-  }
-  progress {
-    vertical-align: baseline;
-  }
-  summary {
-    display: list-item;
-  }
-  ol, ul, menu {
-    list-style: none;
-  }
-  img, svg, video, canvas, audio, iframe, embed, object {
-    display: block;
-    vertical-align: middle;
-  }
-  img, video {
-    max-width: 100%;
-    height: auto;
-  }
-  button, input, select, optgroup, textarea, ::file-selector-button {
-    font: inherit;
-    font-feature-settings: inherit;
-    font-variation-settings: inherit;
-    letter-spacing: inherit;
-    color: inherit;
-    border-radius: 0;
-    background-color: transparent;
-    opacity: 1;
-  }
-  :where(select:is([multiple], [size])) optgroup {
-    font-weight: bolder;
-  }
-  :where(select:is([multiple], [size])) optgroup option {
-    padding-inline-start: 20px;
-  }
-  ::file-selector-button {
-    margin-inline-end: 4px;
-  }
-  ::placeholder {
-    opacity: 1;
-  }
-  @supports (not (-webkit-appearance: -apple-pay-button))  or (contain-intrinsic-size: 1px) {
-    ::placeholder {
-      color: currentcolor;
-      @supports (color: color-mix(in lab, red, red)) {
-        color: color-mix(in oklab, currentcolor 50%, transparent);
-      }
-    }
-  }
-  textarea {
-    resize: vertical;
-  }
-  ::-webkit-search-decoration {
-    -webkit-appearance: none;
-  }
-  ::-webkit-date-and-time-value {
-    min-height: 1lh;
-    text-align: inherit;
-  }
-  ::-webkit-datetime-edit {
-    display: inline-flex;
-  }
-  ::-webkit-datetime-edit-fields-wrapper {
-    padding: 0;
-  }
-  ::-webkit-datetime-edit, ::-webkit-datetime-edit-year-field, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-minute-field, ::-webkit-datetime-edit-second-field, ::-webkit-datetime-edit-millisecond-field, ::-webkit-datetime-edit-meridiem-field {
-    padding-block: 0;
-  }
-  ::-webkit-calendar-picker-indicator {
-    line-height: 1;
-  }
-  :-moz-ui-invalid {
-    box-shadow: none;
-  }
-  button, input:where([type='button'], [type='reset'], [type='submit']), ::file-selector-button {
-    appearance: button;
-  }
-  ::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
-    height: auto;
-  }
-  [hidden]:where(:not([hidden='until-found'])) {
-    display: none !important;
-  }
-}
-@layer utilities {
-  .pointer-events-none {
-    pointer-events: none;
-  }
-  .fixed {
-    position: fixed;
-  }
-  .top-0 {
-    top: calc(var(--spacing) * 0);
-  }
-  .top-6 {
-    top: calc(var(--spacing) * 6);
-  }
-  .right-4 {
-    right: calc(var(--spacing) * 4);
-  }
-  .z-50 {
-    z-index: 50;
-  }
-  .z-\[100\] {
-    z-index: 100;
-  }
-  .col-span-1 {
-    grid-column: span 1 / span 1;
-  }
-  .container {
-    width: 100%;
-    @media (width >= 40rem) {
-      max-width: 40rem;
-    }
-    @media (width >= 48rem) {
-      max-width: 48rem;
-    }
-    @media (width >= 64rem) {
-      max-width: 64rem;
-    }
-    @media (width >= 80rem) {
-      max-width: 80rem;
-    }
-    @media (width >= 96rem) {
-      max-width: 96rem;
-    }
-  }
-  .mx-auto {
-    margin-inline: auto;
-  }
-  .mt-2 {
-    margin-top: calc(var(--spacing) * 2);
-  }
-  .mt-4 {
-    margin-top: calc(var(--spacing) * 4);
-  }
-  .mt-12 {
-    margin-top: calc(var(--spacing) * 12);
-  }
-  .mb-2 {
-    margin-bottom: calc(var(--spacing) * 2);
-  }
-  .mb-4 {
-    margin-bottom: calc(var(--spacing) * 4);
-  }
-  .mb-6 {
-    margin-bottom: calc(var(--spacing) * 6);
-  }
-  .mb-8 {
-    margin-bottom: calc(var(--spacing) * 8);
-  }
-  .mb-12 {
-    margin-bottom: calc(var(--spacing) * 12);
-  }
-  .mb-16 {
-    margin-bottom: calc(var(--spacing) * 16);
-  }
-  .flex {
-    display: flex;
-  }
-  .grid {
-    display: grid;
-  }
-  .hidden {
-    display: none;
-  }
-  .h-20 {
-    height: calc(var(--spacing) * 20);
-  }
-  .min-h-screen {
-    min-height: 100vh;
-  }
-  .w-20 {
-    width: calc(var(--spacing) * 20);
-  }
-  .w-full {
-    width: 100%;
-  }
-  .max-w-2xl {
-    max-width: var(--container-2xl);
-  }
-  .max-w-4xl {
-    max-width: var(--container-4xl);
-  }
-  .max-w-sm {
-    max-width: var(--container-sm);
-  }
-  .translate-y-0 {
-    --tw-translate-y: calc(var(--spacing) * 0);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .translate-y-\[-20px\] {
-    --tw-translate-y: -20px;
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .transform {
-    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
-  }
-  .cursor-not-allowed {
-    cursor: not-allowed;
-  }
-  .flex-col {
-    flex-direction: column;
-  }
-  .items-center {
-    align-items: center;
-  }
-  .justify-between {
-    justify-content: space-between;
-  }
-  .justify-center {
-    justify-content: center;
-  }
-  .gap-4 {
-    gap: calc(var(--spacing) * 4);
-  }
-  .gap-6 {
-    gap: calc(var(--spacing) * 6);
-  }
-  .gap-8 {
-    gap: calc(var(--spacing) * 8);
-  }
-  .space-y-2 {
-    :where(& > :not(:last-child)) {
-      --tw-space-y-reverse: 0;
-      margin-block-start: calc(calc(var(--spacing) * 2) * var(--tw-space-y-reverse));
-      margin-block-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-y-reverse)));
-    }
-  }
-  .space-y-4 {
-    :where(& > :not(:last-child)) {
-      --tw-space-y-reverse: 0;
-      margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));
-      margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
-    }
-  }
-  .space-x-6 {
-    :where(& > :not(:last-child)) {
-      --tw-space-x-reverse: 0;
-      margin-inline-start: calc(calc(var(--spacing) * 6) * var(--tw-space-x-reverse));
-      margin-inline-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-x-reverse)));
-    }
-  }
-  .space-x-8 {
-    :where(& > :not(:last-child)) {
-      --tw-space-x-reverse: 0;
-      margin-inline-start: calc(calc(var(--spacing) * 8) * var(--tw-space-x-reverse));
-      margin-inline-end: calc(calc(var(--spacing) * 8) * calc(1 - var(--tw-space-x-reverse)));
-    }
-  }
-  .overflow-x-hidden {
-    overflow-x: hidden;
-  }
-  .rounded-2xl {
-    border-radius: var(--radius-2xl);
-  }
-  .rounded-3xl {
-    border-radius: var(--radius-3xl);
-  }
-  .rounded-full {
-    border-radius: calc(infinity * 1px);
-  }
-  .rounded-lg {
-    border-radius: var(--radius-lg);
-  }
-  .rounded-xl {
-    border-radius: var(--radius-xl);
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
-  .border-2 {
-    border-style: var(--tw-border-style);
-    border-width: 2px;
-  }
-  .border-green-400\/50 {
-    border-color: color-mix(in srgb, oklch(79.2% 0.209 151.711) 50%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      border-color: color-mix(in oklab, var(--color-green-400) 50%, transparent);
-    }
-  }
-  .border-white\/20 {
-    border-color: color-mix(in srgb, #fff 20%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      border-color: color-mix(in oklab, var(--color-white) 20%, transparent);
-    }
-  }
-  .border-white\/30 {
-    border-color: color-mix(in srgb, #fff 30%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      border-color: color-mix(in oklab, var(--color-white) 30%, transparent);
-    }
-  }
-  .border-white\/50 {
-    border-color: color-mix(in srgb, #fff 50%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      border-color: color-mix(in oklab, var(--color-white) 50%, transparent);
-    }
-  }
-  .bg-black {
-    background-color: var(--color-black);
-  }
-  .bg-black\/80 {
-    background-color: color-mix(in srgb, #000 80%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-black) 80%, transparent);
-    }
-  }
-  .bg-blue-500 {
-    background-color: var(--color-blue-500);
-  }
-  .bg-gray-800 {
-    background-color: var(--color-gray-800);
-  }
-  .bg-gray-900 {
-    background-color: var(--color-gray-900);
-  }
-  .bg-green-500 {
-    background-color: var(--color-green-500);
-  }
-  .bg-purple-500 {
-    background-color: var(--color-purple-500);
-  }
-  .bg-white\/10 {
-    background-color: color-mix(in srgb, #fff 10%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-white) 10%, transparent);
-    }
-  }
-  .bg-white\/20 {
-    background-color: color-mix(in srgb, #fff 20%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-white) 20%, transparent);
-    }
-  }
-  .bg-white\/30 {
-    background-color: color-mix(in srgb, #fff 30%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-white) 30%, transparent);
-    }
-  }
-  .bg-gradient-to-br {
-    --tw-gradient-position: to bottom right in oklab;
-    background-image: linear-gradient(var(--tw-gradient-stops));
-  }
-  .bg-gradient-to-r {
-    --tw-gradient-position: to right in oklab;
-    background-image: linear-gradient(var(--tw-gradient-stops));
-  }
-  .from-blue-400 {
-    --tw-gradient-from: var(--color-blue-400);
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-  .from-blue-500 {
-    --tw-gradient-from: var(--color-blue-500);
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-  .from-gray-800 {
-    --tw-gradient-from: var(--color-gray-800);
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-  .from-gray-900 {
-    --tw-gradient-from: var(--color-gray-900);
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-  .from-green-500 {
-    --tw-gradient-from: var(--color-green-500);
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-  .from-green-500\/20 {
-    --tw-gradient-from: color-mix(in srgb, oklch(72.3% 0.219 149.579) 20%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      --tw-gradient-from: color-mix(in oklab, var(--color-green-500) 20%, transparent);
-    }
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-  .from-white {
-    --tw-gradient-from: var(--color-white);
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-  .via-blue-900 {
-    --tw-gradient-via: var(--color-blue-900);
-    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
-    --tw-gradient-stops: var(--tw-gradient-via-stops);
-  }
-  .to-blue-300 {
-    --tw-gradient-to: var(--color-blue-300);
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-  .to-blue-500 {
-    --tw-gradient-to: var(--color-blue-500);
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-  .to-blue-500\/20 {
-    --tw-gradient-to: color-mix(in srgb, oklch(62.3% 0.214 259.815) 20%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      --tw-gradient-to: color-mix(in oklab, var(--color-blue-500) 20%, transparent);
-    }
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-  .to-emerald-600 {
-    --tw-gradient-to: var(--color-emerald-600);
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-  .to-gray-300 {
-    --tw-gradient-to: var(--color-gray-300);
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-  .to-gray-800 {
-    --tw-gradient-to: var(--color-gray-800);
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-  .to-gray-900 {
-    --tw-gradient-to: var(--color-gray-900);
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-  .to-purple-500 {
-    --tw-gradient-to: var(--color-purple-500);
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-  .to-purple-900 {
-    --tw-gradient-to: var(--color-purple-900);
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-  .bg-clip-text {
-    background-clip: text;
-  }
-  .p-4 {
-    padding: calc(var(--spacing) * 4);
-  }
-  .p-6 {
-    padding: calc(var(--spacing) * 6);
-  }
-  .p-8 {
-    padding: calc(var(--spacing) * 8);
-  }
-  .p-12 {
-    padding: calc(var(--spacing) * 12);
-  }
-  .px-4 {
-    padding-inline: calc(var(--spacing) * 4);
-  }
-  .px-6 {
-    padding-inline: calc(var(--spacing) * 6);
-  }
-  .px-8 {
-    padding-inline: calc(var(--spacing) * 8);
-  }
-  .px-12 {
-    padding-inline: calc(var(--spacing) * 12);
-  }
-  .py-2 {
-    padding-block: calc(var(--spacing) * 2);
-  }
-  .py-3 {
-    padding-block: calc(var(--spacing) * 3);
-  }
-  .py-4 {
-    padding-block: calc(var(--spacing) * 4);
-  }
-  .py-12 {
-    padding-block: calc(var(--spacing) * 12);
-  }
-  .py-24 {
-    padding-block: calc(var(--spacing) * 24);
-  }
-  .pt-20 {
-    padding-top: calc(var(--spacing) * 20);
-  }
-  .text-center {
-    text-align: center;
-  }
-  .text-2xl {
-    font-size: var(--text-2xl);
-    line-height: var(--tw-leading, var(--text-2xl--line-height));
-  }
-  .text-3xl {
-    font-size: var(--text-3xl);
-    line-height: var(--tw-leading, var(--text-3xl--line-height));
-  }
-  .text-4xl {
-    font-size: var(--text-4xl);
-    line-height: var(--tw-leading, var(--text-4xl--line-height));
-  }
-  .text-5xl {
-    font-size: var(--text-5xl);
-    line-height: var(--tw-leading, var(--text-5xl--line-height));
-  }
-  .text-lg {
-    font-size: var(--text-lg);
-    line-height: var(--tw-leading, var(--text-lg--line-height));
-  }
-  .text-sm {
-    font-size: var(--text-sm);
-    line-height: var(--tw-leading, var(--text-sm--line-height));
-  }
-  .text-xl {
-    font-size: var(--text-xl);
-    line-height: var(--tw-leading, var(--text-xl--line-height));
-  }
-  .leading-relaxed {
-    --tw-leading: var(--leading-relaxed);
-    line-height: var(--leading-relaxed);
-  }
-  .font-black {
-    --tw-font-weight: var(--font-weight-black);
-    font-weight: var(--font-weight-black);
-  }
-  .font-bold {
-    --tw-font-weight: var(--font-weight-bold);
-    font-weight: var(--font-weight-bold);
-  }
-  .text-blue-400 {
-    color: var(--color-blue-400);
-  }
-  .text-gray-300 {
-    color: var(--color-gray-300);
-  }
-  .text-gray-400 {
-    color: var(--color-gray-400);
-  }
-  .text-green-400 {
-    color: var(--color-green-400);
-  }
-  .text-indigo-400 {
-    color: var(--color-indigo-400);
-  }
-  .text-purple-400 {
-    color: var(--color-purple-400);
-  }
-  .text-transparent {
-    color: transparent;
-  }
-  .text-white {
-    color: var(--color-white);
-  }
-  .opacity-0 {
-    opacity: 0%;
-  }
-  .opacity-100 {
-    opacity: 100%;
-  }
-  .shadow-2xl {
-    --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .shadow-lg {
-    --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .shadow-xl {
-    --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .backdrop-blur-md {
-    --tw-backdrop-blur: blur(var(--blur-md));
-    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
-    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
-  }
-  .backdrop-blur-xl {
-    --tw-backdrop-blur: blur(var(--blur-xl));
-    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
-    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
-  }
-  .transition {
-    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-  }
-  .transition-all {
-    transition-property: all;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-  }
-  .duration-300 {
-    --tw-duration: 300ms;
-    transition-duration: 300ms;
-  }
-  .duration-500 {
-    --tw-duration: 500ms;
-    transition-duration: 500ms;
-  }
-  .ease-out {
-    --tw-ease: var(--ease-out);
-    transition-timing-function: var(--ease-out);
-  }
-  .hover\:-translate-y-1 {
-    &:hover {
-      @media (hover: hover) {
-        --tw-translate-y: calc(var(--spacing) * -1);
-        translate: var(--tw-translate-x) var(--tw-translate-y);
-      }
-    }
-  }
-  .hover\:-translate-y-2 {
-    &:hover {
-      @media (hover: hover) {
-        --tw-translate-y: calc(var(--spacing) * -2);
-        translate: var(--tw-translate-x) var(--tw-translate-y);
-      }
-    }
-  }
-  .hover\:scale-105 {
-    &:hover {
-      @media (hover: hover) {
-        --tw-scale-x: 105%;
-        --tw-scale-y: 105%;
-        --tw-scale-z: 105%;
-        scale: var(--tw-scale-x) var(--tw-scale-y);
-      }
-    }
-  }
-  .hover\:border-white {
-    &:hover {
-      @media (hover: hover) {
-        border-color: var(--color-white);
-      }
-    }
-  }
-  .hover\:bg-blue-600 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-blue-600);
-      }
-    }
-  }
-  .hover\:bg-green-600 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-green-600);
-      }
-    }
-  }
-  .hover\:bg-white\/10 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: color-mix(in srgb, #fff 10%, transparent);
-        @supports (color: color-mix(in lab, red, red)) {
-          background-color: color-mix(in oklab, var(--color-white) 10%, transparent);
+    <title>Oirat-Transfer - Трансфер из Москвы, Тамбова, Тулы, Владимира, Нижнего Новгорода в зону СВО</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <script src="https://unpkg.com/imask"></script>
+    
+    <style>
+        /* Дополнительные стили для селектов и инпутов */
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            filter: invert(1);
+            cursor: pointer;
         }
-      }
-    }
-  }
-  .hover\:bg-white\/20 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: color-mix(in srgb, #fff 20%, transparent);
-        @supports (color: color-mix(in lab, red, red)) {
-          background-color: color-mix(in oklab, var(--color-white) 20%, transparent);
+        /* Скрытие стрелок у input number */
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+            -webkit-appearance: none; 
+            margin: 0; 
         }
-      }
-    }
-  }
-  .hover\:from-blue-600 {
-    &:hover {
-      @media (hover: hover) {
-        --tw-gradient-from: var(--color-blue-600);
-        --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-      }
-    }
-  }
-  .hover\:from-green-600 {
-    &:hover {
-      @media (hover: hover) {
-        --tw-gradient-from: var(--color-green-600);
-        --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-      }
-    }
-  }
-  .hover\:to-blue-600 {
-    &:hover {
-      @media (hover: hover) {
-        --tw-gradient-to: var(--color-blue-600);
-        --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-      }
-    }
-  }
-  .hover\:to-purple-600 {
-    &:hover {
-      @media (hover: hover) {
-        --tw-gradient-to: var(--color-purple-600);
-        --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-      }
-    }
-  }
-  .hover\:text-blue-400 {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-blue-400);
-      }
-    }
-  }
-  .hover\:shadow-2xl {
-    &:hover {
-      @media (hover: hover) {
-        --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
-        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-      }
-    }
-  }
-  .focus\:bg-white\/30 {
-    &:focus {
-      background-color: color-mix(in srgb, #fff 30%, transparent);
-      @supports (color: color-mix(in lab, red, red)) {
-        background-color: color-mix(in oklab, var(--color-white) 30%, transparent);
-      }
-    }
-  }
-  .focus\:ring-2 {
-    &:focus {
-      --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
-      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-    }
-  }
-  .focus\:ring-blue-500 {
-    &:focus {
-      --tw-ring-color: var(--color-blue-500);
-    }
-  }
-  .focus\:outline-none {
-    &:focus {
-      --tw-outline-style: none;
-      outline-style: none;
-    }
-  }
-  .sm\:flex-row {
-    @media (width >= 40rem) {
-      flex-direction: row;
-    }
-  }
-  .md\:right-8 {
-    @media (width >= 48rem) {
-      right: calc(var(--spacing) * 8);
-    }
-  }
-  .md\:col-span-2 {
-    @media (width >= 48rem) {
-      grid-column: span 2 / span 2;
-    }
-  }
-  .md\:flex {
-    @media (width >= 48rem) {
-      display: flex;
-    }
-  }
-  .md\:hidden {
-    @media (width >= 48rem) {
-      display: none;
-    }
-  }
-  .md\:grid-cols-2 {
-    @media (width >= 48rem) {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-  .md\:grid-cols-3 {
-    @media (width >= 48rem) {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-  }
-  .md\:text-2xl {
-    @media (width >= 48rem) {
-      font-size: var(--text-2xl);
-      line-height: var(--tw-leading, var(--text-2xl--line-height));
-    }
-  }
-  .md\:text-7xl {
-    @media (width >= 48rem) {
-      font-size: var(--text-7xl);
-      line-height: var(--tw-leading, var(--text-7xl--line-height));
-    }
-  }
-  .md\:text-base {
-    @media (width >= 48rem) {
-      font-size: var(--text-base);
-      line-height: var(--tw-leading, var(--text-base--line-height));
-    }
-  }
-  .lg\:grid-cols-4 {
-    @media (width >= 64rem) {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-  }
-}
-@property --tw-translate-x {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
-@property --tw-translate-y {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
-@property --tw-translate-z {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
-@property --tw-rotate-x {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-rotate-y {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-rotate-z {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-skew-x {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-skew-y {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-space-y-reverse {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
-@property --tw-space-x-reverse {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
-@property --tw-gradient-position {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-gradient-from {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: #0000;
-}
-@property --tw-gradient-via {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: #0000;
-}
-@property --tw-gradient-to {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: #0000;
-}
-@property --tw-gradient-stops {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-gradient-via-stops {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-gradient-from-position {
-  syntax: "<length-percentage>";
-  inherits: false;
-  initial-value: 0%;
-}
-@property --tw-gradient-via-position {
-  syntax: "<length-percentage>";
-  inherits: false;
-  initial-value: 50%;
-}
-@property --tw-gradient-to-position {
-  syntax: "<length-percentage>";
-  inherits: false;
-  initial-value: 100%;
-}
-@property --tw-leading {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-font-weight {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-shadow {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0 0 #0000;
-}
-@property --tw-shadow-color {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-shadow-alpha {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 100%;
-}
-@property --tw-inset-shadow {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0 0 #0000;
-}
-@property --tw-inset-shadow-color {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-inset-shadow-alpha {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 100%;
-}
-@property --tw-ring-color {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-ring-shadow {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0 0 #0000;
-}
-@property --tw-inset-ring-color {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-inset-ring-shadow {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0 0 #0000;
-}
-@property --tw-ring-inset {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-ring-offset-width {
-  syntax: "<length>";
-  inherits: false;
-  initial-value: 0px;
-}
-@property --tw-ring-offset-color {
-  syntax: "*";
-  inherits: false;
-  initial-value: #fff;
-}
-@property --tw-ring-offset-shadow {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0 0 #0000;
-}
-@property --tw-backdrop-blur {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-backdrop-brightness {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-backdrop-contrast {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-backdrop-grayscale {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-backdrop-hue-rotate {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-backdrop-invert {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-backdrop-opacity {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-backdrop-saturate {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-backdrop-sepia {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-duration {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-ease {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-scale-x {
-  syntax: "*";
-  inherits: false;
-  initial-value: 1;
-}
-@property --tw-scale-y {
-  syntax: "*";
-  inherits: false;
-  initial-value: 1;
-}
-@property --tw-scale-z {
-  syntax: "*";
-  inherits: false;
-  initial-value: 1;
-}
-@layer properties {
-  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
-    *, ::before, ::after, ::backdrop {
-      --tw-translate-x: 0;
-      --tw-translate-y: 0;
-      --tw-translate-z: 0;
-      --tw-rotate-x: initial;
-      --tw-rotate-y: initial;
-      --tw-rotate-z: initial;
-      --tw-skew-x: initial;
-      --tw-skew-y: initial;
-      --tw-space-y-reverse: 0;
-      --tw-space-x-reverse: 0;
-      --tw-border-style: solid;
-      --tw-gradient-position: initial;
-      --tw-gradient-from: #0000;
-      --tw-gradient-via: #0000;
-      --tw-gradient-to: #0000;
-      --tw-gradient-stops: initial;
-      --tw-gradient-via-stops: initial;
-      --tw-gradient-from-position: 0%;
-      --tw-gradient-via-position: 50%;
-      --tw-gradient-to-position: 100%;
-      --tw-leading: initial;
-      --tw-font-weight: initial;
-      --tw-shadow: 0 0 #0000;
-      --tw-shadow-color: initial;
-      --tw-shadow-alpha: 100%;
-      --tw-inset-shadow: 0 0 #0000;
-      --tw-inset-shadow-color: initial;
-      --tw-inset-shadow-alpha: 100%;
-      --tw-ring-color: initial;
-      --tw-ring-shadow: 0 0 #0000;
-      --tw-inset-ring-color: initial;
-      --tw-inset-ring-shadow: 0 0 #0000;
-      --tw-ring-inset: initial;
-      --tw-ring-offset-width: 0px;
-      --tw-ring-offset-color: #fff;
-      --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-backdrop-blur: initial;
-      --tw-backdrop-brightness: initial;
-      --tw-backdrop-contrast: initial;
-      --tw-backdrop-grayscale: initial;
-      --tw-backdrop-hue-rotate: initial;
-      --tw-backdrop-invert: initial;
-      --tw-backdrop-opacity: initial;
-      --tw-backdrop-saturate: initial;
-      --tw-backdrop-sepia: initial;
-      --tw-duration: initial;
-      --tw-ease: initial;
-      --tw-scale-x: 1;
-      --tw-scale-y: 1;
-      --tw-scale-z: 1;
-    }
-  }
-}
-
-#bookingForm input, 
-#bookingForm select, 
-#bookingForm textarea {
-    height: 64px; 
-    box-sizing: border-box; 
-    display: flex;
-    align-items: center;
-}
-
-#bookingForm textarea {
-    height: auto; 
-    min-height: 120px;
-}
-
-#bookingForm select {
-    appearance: none; 
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='white'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 1.5rem center;
-    background-size: 1.5rem;
-    padding-right: 3rem;
-}
-
-#bookingForm input[type=number]::-webkit-inner-spin-button, 
-#bookingForm input[type=number]::-webkit-outer-spin-button { 
-    -webkit-appearance: none; 
-    margin: 0; 
-}
-</style>
+    </style>
 </head>
 <body class="bg-gray-900 text-white overflow-x-hidden">
-    <!-- Header -->
+    
     <header class="fixed top-0 w-full bg-black/80 backdrop-blur-md z-50 shadow-lg">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <div class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
                 Oirat-Transfer
             </div>
-            <ul class="hidden md:flex space-x-8">
+            <ul class="hidden md:flex space-x-4">
                 <li><a href="#home" class="hover:text-blue-400 transition">Главная</a></li>
+                <li><a href="#directions" class="hover:text-blue-400 transition">Направления</a></li>
                 <li><a href="#booking" class="hover:text-blue-400 transition">Бронирование</a></li>
+                <li><a href="#calculator" class="hover:text-blue-400 transition">Калькулятор</a></li>
                 <li><a href="#services" class="hover:text-blue-400 transition">Услуги</a></li>
                 <li><a href="#price" class="hover:text-blue-400 transition">Цены</a></li>
-                <li><a href="#payment" class="hover:text-blue-400 transition">Оплата</a></li>
                 <li><a href="#contact" class="hover:text-blue-400 transition">Контакты</a></li>
             </ul>
-            <button class="md:hidden">☰</button>
+            <button class="md:hidden text-2xl" onclick="document.getElementById('mobileMenu').classList.toggle('hidden')">☰</button>
         </nav>
+        <div id="mobileMenu" class="hidden md:hidden bg-gray-900 p-4 border-b border-gray-700">
+            <ul class="flex flex-col space-y-2 text-center">
+                <li><a href="#home" class="block py-2">Главная</a></li>
+                <li><a href="#booking" class="block py-2">Бронирование</a></li>
+                <li><a href="#calculator" class="block py-2">Калькулятор</a></li>
+            </ul>
+        </div>
     </header>
 
-    <!-- Hero Section -->
     <section id="home" class="min-h-screen bg-gradient-to-br from-gray-800 via-blue-900 to-purple-900 pt-20 flex items-center justify-center px-4">
         <div class="max-w-4xl mx-auto text-center">
             <h1 class="text-5xl md:text-7xl font-black mb-8 bg-gradient-to-r from-white to-blue-300 bg-clip-text text-transparent">
-                Трансфер из Москвы в Донецк, Луганск, Горловку и другие города
+                Трансфер из Москвы, Тамбова, Тулы, Владимира, Нижнего Новгорода в зону СВО
             </h1>
             <p class="text-xl md:text-2xl mb-12 text-gray-300 max-w-2xl mx-auto leading-relaxed">
-                Надежный и комфортный трансфер из Москвы и Подмосковья в
- Донецк, Луганск, Горловку и другие города ДНР/ЛНР. Встреча по адресу, 
-помощь с багажом, фиксированная цена.
+                Совершаем проезд в города: Донецк, Луганск, Горловка, Мариуполь, Алчевск, Волноваха и другие города ДНР/ЛНР. Встреча по адресу, помощь с багажом и грузами, фиксированная цена за км.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="#booking" class="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white font-bold py-4 px-12 rounded-full text-xl shadow-2xl hover:shadow-3xl transform hover:-translate-y-2 transition-all duration-300">
                     Заказать трансфер
                 </a>
-                <a href="#price" class="border-2 border-white/50 hover:border-white text-white font-bold py-4 px-12 rounded-full text-xl hover:bg-white/10 transition-all duration-300">
-                    Посмотреть цены
+                <a href="#calculator" class="border-2 border-white/50 hover:border-white text-white font-bold py-4 px-12 rounded-full text-xl hover:bg-white/10 transition-all duration-300">
+                    Рассчитать стоимость
                 </a>
             </div>
         </div>
     </section>
 
-    <section id="booking" class="py-24 bg-gradient-to-r from-gray-800 to-gray-900">
-    <div class="container mx-auto px-6">
-        <h2 class="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-            Быстрый заказ трансфера
-        </h2>
-        <div class="max-w-2xl mx-auto">
-            <form id="bookingForm" class="bg-white/10 backdrop-blur-xl p-12 rounded-3xl shadow-2xl border border-white/20">
-                
-                <div class="grid md:grid-cols-2 gap-6 mb-6">
-                    <select id="pickupCity" name="pickupCity" required class="bg-white/20 border border-white/30 rounded-2xl px-6 py-4 text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white/30 transition-all text-white">
-                        <option value="" selected disabled>Город отправления</option>
-                        <option>Москва</option>
-                        <option>Тамбов</option>
-                        <option>Тула</option>
-                        <option>Владимир</option>
-                        <option>Нижний Новгород</option>
-                    </select>
-                    
-                    <select id="destination" name="destination" required class="bg-white/20 border border-white/30 rounded-2xl px-6 py-4 text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white/30 transition-all text-white">
-                      <option value="" selected disabled>Город назначения</option>
-                      <option>Алчевск</option>
-                      <option>Амвросиевка</option>
-                      <option>Антрацит</option>
-                      <option>Бахмут</option>
-                      <option>Брянка</option>
-                      <option>Волноваха</option>
-                      <option>Горловка</option>
-                      <option>Дебальцево</option>
-                      <option>Докучаевск</option>
-                      <option>Донецк</option>
-                      <option>Зугрэс</option>
-                      <option>Иловайск</option>
-                      <option>Луганск</option>
-                      <option>Макеевка</option>
-                      <option>Мариуполь</option>
-                      <option>Мироновский</option>
-                      <option>Новоайдар</option>
-                      <option>Пелагеевка</option>
-                      <option>Первомайск</option>
-                      <option>Розовка</option>
-                      <option>Ровеньки</option>
-                      <option>Рубежное</option>
-                      <option>Сватово</option>
-                      <option>Снежное</option>
-                      <option>Старобельск</option>
-                      <option>Стаханов</option>
-                      <option>Счастье</option>
-                      <option>Токмак</option>
-                      <option>Торез</option>
-                      <option>Углегорск</option>
-                      <option>Шахтерск</option>
-                      <option>Ясиноватая</option>
-                  </select>
+    <section id="directions" class="py-24 bg-gradient-to-b from-gray-800 to-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+                Полные направления в зону СВО
+            </h2>
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 text-lg text-gray-300 leading-relaxed">
+                <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+                    <strong class="text-blue-400 text-xl block mb-2">Из Москвы и близлежащих городов:</strong>
+                    Москва, Тамбов, Тула, Владимир, Нижний Новгород.
                 </div>
-
-                <div class="mb-6">
-                    <input type="text" id="pickupAddress" name="pickupAddress" placeholder="Точный адрес подачи (необязательно)" class="w-full bg-white/20 border border-white/30 rounded-2xl px-6 py-4 text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white/30 transition-all text-white">
+                <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+                    <strong class="text-purple-400 text-xl block mb-2">В города зон СВО:</strong>
+                    Донецк, Луганск, Дебальцево, Алчевск, Мариуполь, Волноваха, Стаханов, Макеевка, Снежное, Антрацит, Ровенки, Амвросиевка, Торез, Иловайск, Ясиноватая, Первомайск, Пелагеевка, Шахтерск, Брянка, Старобельск, Счастье, Сватово, Рубежное, Новоайдар, Горловка, Токмак, Розовка, Докучаевск, Зугрэс, Углегорск, Бахмут, Мироновский.
                 </div>
-
-                <div class="grid md:grid-cols-2 gap-6 mb-6">
-                    <input type="date" id="date" name="date" required class="bg-white/20 border border-white/30 rounded-2xl px-6 py-4 text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white/30 transition-all text-white">
-                    
-                    <div class="relative">
-                        <input type="number" id="passengers" name="passengers" min="1" max="20" placeholder="Кол-во мест" required 
-                              class="w-full bg-white/20 border border-white/30 rounded-2xl px-6 py-4 text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white/30 transition-all text-white">
-                        <span class="absolute right-4 top-4 text-gray-400 pointer-events-none">чел.</span>
-                    </div>
-                </div>
-
-                <div class="grid md:grid-cols-2 gap-6 mb-6">
-                    <input type="text" id="customerName" name="customerName" placeholder="Ваше имя" required class="bg-white/20 border border-white/30 rounded-2xl px-6 py-4 text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white/30 transition-all text-white">
-                    <input 
-                        type="tel" 
-                        id="phone" 
-                        name="phone" 
-                        placeholder="+7 (___) ___-__-__" 
-                        required 
-                        pattern="^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$"
-                        title="Пожалуйста, введите корректный номер телефона (11 цифр)"
-                        class="ваш-класс-дизайна"
-                      >
-                    </div>
-
-                <div class="mb-6">
-                    <textarea id="message" name="message" placeholder="Дополнительные комментарии, пожелания" class="w-full bg-white/20 border border-white/30 rounded-2xl px-6 py-4 text-lg resize-vertical focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white/30 transition-all text-white"></textarea>
-                </div>
-
-                <button type="submit" id="submitBtn" class="w-full bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-bold py-4 px-8 rounded-2xl text-xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
-                    Отправить заявку
-                </button>
-            </form>
+            </div>
         </div>
-    </div>
-</section>
-    <!-- Services -->
+    </section>
+
+    <section id="booking" class="py-24 bg-gradient-to-r from-gray-800 to-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-8 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+                Быстрый заказ трансфера
+            </h2>
+            <div class="text-center mb-12">
+                <a href="tel:+79098930000" class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-12 text-xl rounded-2xl shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 transition-all duration-300">
+                    📞 +7 909 893 0000 (Позвонить)
+                </a>
+            </div>
+
+            <div class="max-w-3xl mx-auto">
+                <form id="bookingForm" class="bg-white/10 backdrop-blur-xl p-8 md:p-12 rounded-3xl shadow-2xl border border-white/20">
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <select id="departure" name="departure" required class="w-full bg-white/20 border border-white/30 rounded-2xl px-6 py-4 text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white/30 transition-all text-white [&>option]:bg-gray-800">
+                            <option value="">Город отправления *</option>
+                            <option>Москва</option>
+                            <option>Тамбов</option>
+                            <option>Тула</option>
+                            <option>Владимир</option>
+                            <option>Нижний Новгород</option>
+                        </select>
+                        
+                        <select id="destination" name="destination" required class="w-full bg-white/20 border border-white/30 rounded-2xl px-6 py-4 text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white/30 transition-all text-white [&>option]:bg-gray-800">
+                            <option value="">Город назначения *</option>
+                            <option>Донецк</option>
+                            <option>Луганск</option>
+                            <option>Горловка</option>
+                            <option>Мариуполь</option>
+                            <option>Алчевск</option>
+                            <option>Амвросиевка</option>
+                            <option>Антрацит</option>
+                            <option>Бахмут</option>
+                            <option>Брянка</option>
+                            <option>Волноваха</option>
+                            <option>Дебальцево</option>
+                            <option>Докучаевск</option>
+                            <option>Зугрэс</option>
+                            <option>Иловайск</option>
+                            <option>Макеевка</option>
+                            <option>Мироновский</option>
+                            <option>Новоайдар</option>
+                            <option>Пелагеевка</option>
+                            <option>Первомайск</option>
+                            <option>Розовка</option>
+                            <option>Ровенки</option>
+                            <option>Рубежное</option>
+                            <option>Сватово</option>
+                            <option>Снежное</option>
+                            <option>Старобельск</option>
+                            <option>Стаханов</option>
+                            <option>Счастье</option>
+                            <option>Токмак</option>
+                            <option>Торез</option>
+                            <option>Углегорск</option>
+                            <option>Шахтерск</option>
+                            <option>Ясиноватая</option>
+                        </select>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label class="block text-sm text-gray-400 mb-1 ml-2">Дата поездки *</label>
+                            <input type="date" id="date" name="date" required class="w-full bg-white/20 border border-white/30 rounded-2xl px-6 py-4 text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white/30 transition-all text-white placeholder-gray-300">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm text-gray-400 mb-1 ml-2">Класс авто (по желанию)</label>
+                            <select id="serviceClass" name="serviceClass" class="w-full bg-white/20 border border-white/30 rounded-2xl px-6 py-4 text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white/30 transition-all text-white [&>option]:bg-gray-800">
+                                <option value="">Не выбрано</option>
+                                <option value="Эконом">Эконом класс (25₽/км)</option>
+                                <option value="Премиум">Премиум класс S (27₽/км)</option>
+                                <option value="Минивэн">Минивэн (40₽/км)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <label class="block text-sm text-gray-400 mb-1 ml-2">Количество мест *</label>
+                        <input type="number" id="passengers" name="passengers" min="1" max="20" placeholder="Сколько человек поедет?" required class="w-full bg-white/20 border border-white/30 rounded-2xl px-6 py-4 text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white/30 transition-all text-white placeholder-gray-300">
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <input type="text" id="customerName" name="customerName" placeholder="ФИО пассажира *" required class="w-full bg-white/20 border border-white/30 rounded-2xl px-6 py-4 text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white/30 transition-all text-white placeholder-gray-300">
+                        <input type="tel" id="phone" name="phone" placeholder="+7 (XXX) XXX-XX-XX *" required class="w-full bg-white/20 border border-white/30 rounded-2xl px-6 py-4 text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white/30 transition-all text-white placeholder-gray-300">
+                    </div>
+
+                    <div class="mb-6">
+                        <textarea id="message" name="message" placeholder="Адрес подачи в Москве/Подмосковье, пожелания по багажу..." class="w-full bg-white/20 border border-white/30 rounded-2xl px-6 py-4 text-lg resize-vertical focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white/30 transition-all mb-6 text-white placeholder-gray-300"></textarea>
+                    </div>
+
+                    <button type="submit" id="submitBtn" class="w-full bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-bold py-4 px-8 rounded-2xl text-xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed">
+                        Отправить заявку
+                    </button>
+                    <p class="text-center text-sm text-gray-400 mt-4">Нажимая кнопку, вы отправляете заявку в наш Telegram бот.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="calculator" class="py-24 bg-gradient-to-r from-gray-900 to-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+                Калькулятор стоимости
+            </h2>
+            <div class="max-w-2xl mx-auto">
+                <form id="calcForm" class="bg-white/10 backdrop-blur-xl p-12 rounded-3xl shadow-2xl border border-white/20 space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <select id="calcDeparture" class="w-full bg-white/20 border border-white/30 rounded-2xl px-6 py-4 text-lg text-white [&>option]:bg-gray-800">
+                            <option value="">Город отправления</option>
+                            <option>Москва</option>
+                            <option>Тамбов</option>
+                            <option>Тула</option>
+                            <option>Владимир</option>
+                            <option>Нижний Новгород</option>
+                        </select>
+                        <select id="calcDestination" class="w-full bg-white/20 border border-white/30 rounded-2xl px-6 py-4 text-lg text-white [&>option]:bg-gray-800">
+                            <option value="">Город назначения</option>
+                            <option>Донецк</option>
+                            <option>Луганск</option>
+                            <option>Горловка</option>
+                            <option>Мариуполь</option>
+                            <option>Алчевск</option>
+                            <option>Амвросиевка</option>
+                            <option>Антрацит</option>
+                            <option>Бахмут</option>
+                            <option>Брянка</option>
+                            <option>Волноваха</option>
+                            <option>Дебальцево</option>
+                            <option>Докучаевск</option>
+                            <option>Зугрэс</option>
+                            <option>Иловайск</option>
+                            <option>Макеевка</option>
+                            <option>Мироновский</option>
+                            <option>Новоайдар</option>
+                            <option>Пелагеевка</option>
+                            <option>Первомайск</option>
+                            <option>Розовка</option>
+                            <option>Ровенки</option>
+                            <option>Рубежное</option>
+                            <option>Сватово</option>
+                            <option>Снежное</option>
+                            <option>Старобельск</option>
+                            <option>Стаханов</option>
+                            <option>Счастье</option>
+                            <option>Токмак</option>
+                            <option>Торез</option>
+                            <option>Углегорск</option>
+                            <option>Шахтерск</option>
+                            <option>Ясиноватая</option>
+                        </select>
+                    </div>
+                    <select id="calcClass" class="w-full bg-white/20 border border-white/30 rounded-2xl px-6 py-4 text-lg text-white [&>option]:bg-gray-800">
+                        <option value="">Класс автомобиля</option>
+                        <option data-price="25" value="Эконом">Эконом (25 ₽/км)</option>
+                        <option data-price="27" value="Премиум">Премиум S-класс (27 ₽/км)</option>
+                        <option data-price="40" value="Минивэн">Минивэн (40 ₽/км)</option>
+                    </select>
+                    <label class="flex items-center space-x-3 text-white">
+                        <input type="checkbox" id="nightTrip" class="w-5 h-5 bg-white/20 border-white/30 rounded focus:ring-blue-500">
+                        <span class="text-lg">Ночной рейс (+20%)</span>
+                    </label>
+                    <button type="submit" class="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white font-bold py-4 px-8 rounded-2xl text-xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
+                        Рассчитать примерную цену
+                    </button>
+                    <div id="calcResult" class="hidden bg-gradient-to-r from-green-500/20 to-blue-500/20 border border-green-400/50 rounded-2xl p-8 text-center">
+                        <p class="text-lg font-bold mb-2 text-white">Примерный расчёт:</p>
+                        <div id="estKm" class="text-xl mb-2 text-gray-200"></div>
+                        <div id="estCost" class="text-3xl font-black text-green-400 mb-4"></div>
+                        <p class="text-sm text-gray-300">Точную цену уточним по телефону.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <section id="services" class="py-24 bg-gray-800">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
@@ -1377,124 +271,191 @@
             </h2>
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="bg-white/10 backdrop-blur-xl p-8 rounded-3xl text-center hover:bg-white/20 transition-all duration-300 hover:scale-105">
-                    <div class="w-20 h-20 bg-blue-500 rounded-3xl mx-auto mb-6 flex items-center justify-center text-2xl">✈️</div>
-                    <h3 class="text-2xl font-bold mb-4">Трансфер в Донецк и ДНР</h3>
-                    <p class="text-gray-300">Из Москвы в Донецк, Макеевку, Горловку. Встреча с табличкой, помощь с багажом.</p>
+                    <div class="text-5xl mb-6">🚗</div>
+                    <h3 class="text-2xl font-bold mb-4">Эконом класс</h3>
+                    <p class="text-gray-300">Надежно и доступно в зону СВО. 25₽/км</p>
                 </div>
                 <div class="bg-white/10 backdrop-blur-xl p-8 rounded-3xl text-center hover:bg-white/20 transition-all duration-300 hover:scale-105">
-                    <div class="w-20 h-20 bg-green-500 rounded-3xl mx-auto mb-6 flex items-center justify-center text-2xl">🚗</div>
-                    <h3 class="text-2xl font-bold mb-4">Междугородние поездки</h3>
-                    <p class="text-gray-300">Из Москвы в Луганск, Алчевск и ЛНР на современных авто.</p>
+                    <div class="text-5xl mb-6">✨</div>
+                    <h3 class="text-2xl font-bold mb-4">Премиум класс</h3>
+                    <p class="text-gray-300">Автомобили S-класса для комфорта. 27₽/км</p>
                 </div>
                 <div class="bg-white/10 backdrop-blur-xl p-8 rounded-3xl text-center hover:bg-white/20 transition-all duration-300 hover:scale-105">
-                    <div class="w-20 h-20 bg-purple-500 rounded-3xl mx-auto mb-6 flex items-center justify-center text-2xl">⭐</div>
-                    <h3 class="text-2xl font-bold mb-4">VIP сервис</h3>
-                    <p class="text-gray-300">Мерседес, встреча с цветами, детские кресла бесплатно.</p>
+                    <div class="text-5xl mb-6">🚐</div>
+                    <h3 class="text-2xl font-bold mb-4">Минивэн</h3>
+                    <p class="text-gray-300">Для групп до 8 мест и багажа. 40₽/км</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Prices -->
     <section id="price" class="py-24 bg-gradient-to-r from-gray-900 to-gray-800">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-                Цены на трансфер из Москвы
+                Тарифы
             </h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
                 <div class="bg-white/10 backdrop-blur-xl p-6 rounded-2xl text-center hover:bg-white/20 transition-all">
                     <h3 class="text-xl font-bold mb-2">Эконом</h3>
-                    <div class="text-3xl font-black text-green-400 mb-2">от 1500 ₽</div>
-                    <p>До 3 пасс.</p>
+                    <div class="text-3xl font-black text-green-400 mb-2">25 ₽/км</div>
                 </div>
                 <div class="bg-white/10 backdrop-blur-xl p-6 rounded-2xl text-center hover:bg-white/20 transition-all">
-                    <h3 class="text-xl font-bold mb-2">Комфорт</h3>
-                    <div class="text-3xl font-black text-blue-400 mb-2">от 2000 ₽</div>
-                    <p>До 4 пасс.</p>
-                </div>
-                <div class="bg-white/10 backdrop-blur-xl p-6 rounded-2xl text-center hover:bg-white/20 transition-all">
-                    <h3 class="text-xl font-bold mb-2">Бизнес</h3>
-                    <div class="text-3xl font-black text-purple-400 mb-2">от 3000 ₽</div>
-                    <p>До 4 пасс.</p>
+                    <h3 class="text-xl font-bold mb-2">Премиум</h3>
+                    <div class="text-3xl font-black text-blue-400 mb-2">27 ₽/км</div>
                 </div>
                 <div class="bg-white/10 backdrop-blur-xl p-6 rounded-2xl text-center hover:bg-white/20 transition-all">
                     <h3 class="text-xl font-bold mb-2">Минивэн</h3>
-                    <div class="text-3xl font-black text-indigo-400 mb-2">от 4000 ₽</div>
-                    <p>До 8 пасс.</p>
+                    <div class="text-3xl font-black text-purple-400 mb-2">40 ₽/км</div>
                 </div>
             </div>
-            <p class="text-center mt-12 text-gray-400">Фиксированная цена без сюрпризов. Ночью +20%</p>
+            <p class="text-center mt-12 text-gray-400 mb-8">Фиксированная цена за км. Ночью +20%.</p>
         </div>
     </section>
 
-    <!-- Payment Section -->
-    <section id="payment" class="py-24 bg-gradient-to-r from-gray-900 to-gray-800">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-                Оплата трансфера
-            </h2>
-            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-                <div class="bg-white/10 backdrop-blur-xl p-8 rounded-3xl text-center hover:bg-white/20 transition-all hover:scale-105">
-                    <div class="w-20 h-20 bg-green-500 rounded-3xl mx-auto mb-6 flex items-center justify-center text-2xl">💰</div>
-                    <h3 class="text-2xl font-bold mb-4">Наличные при посадке</h3>
-                    <p class="text-gray-300 mb-6">Основной способ. Оплата водителю по факту прибытия. Без предоплаты.</p>
-                    <button onclick="alert('Готово! Оплата наличкой водителю 🚗')" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-2xl transition-all">Выбрать</button>
-                </div>
-                <div class="bg-white/10 backdrop-blur-xl p-8 rounded-3xl text-center hover:bg-white/20 transition-all hover:scale-105">
-                    <div class="w-20 h-20 bg-blue-500 rounded-3xl mx-auto mb-6 flex items-center justify-center text-2xl">💳</div>
-                    <h3 class="text-2xl font-bold mb-4">Предоплата картой (СБП)</h3>
-                    <p class="text-gray-300 mb-6">Быстро через Сбер/Тинькофф. QR ниже, подтверждение сразу.</p>
-                    <div class="bg-white/20 p-4 rounded-xl mb-4">
-                        <img src="a_data/000000" alt="СБП QR" class="mx-auto rounded-lg shadow-lg">
-                    </div>
-                    <button id="prepayBtn" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-2xl transition-all" onclick="copyRekвизиты()">Оплатить сейчас</button>
-                </div>
-                <div class="bg-white/10 backdrop-blur-xl p-8 rounded-3xl text-center hover:bg-white/20 transition-all hover:scale-105">
-                    <div class="w-20 h-20 bg-purple-500 rounded-3xl mx-auto mb-6 flex items-center justify-center text-2xl">📱</div>
-                    <h3 class="text-2xl font-bold mb-4">Переводом / Telegram</h3>
-                    <p class="text-gray-300">СБП/карта по реквизитам. Подтверждение в TG мгновенно.</p>
-                    <div class="mt-4 space-y-2 text-sm">
-                        <p>Карта: **** **** **** 1234<br>СБП: +7(900)123-45-67</p>
-                        <button onclick="navigator.clipboard.writeText('СБП: +7(900)1234567'); alert('Реквизиты скопированы! 💳')" class="bg-purple-500 text-white px-4 py-2 rounded-xl text-sm">Скопировать</button>
-                    </div>
-                </div>
-            </div>
-            <p class="text-center mt-12 text-gray-400 max-w-2xl mx-auto">Безопасная оплата. Возврат при отмене за 24ч. Подтверждение по email/TG.</p>
-        </div>
-    </section>
-
-    <!-- Инструкция по скачиванию/запуску ЛОКАЛЬНО -->
-    <!-- 1. Открой этот index.html в браузере (drag&drop или двойной клик). 
-    2. Ctrl+S (Cmd+S Mac) → сохрани на Рабочий стол/Папку.
-    3. Запуск: двойной клик на index.html → откроется в браузере! 
-    4. Деплой онлайн: 
-         - GitHub Pages: new repo → upload index.html → Settings → Pages → Deploy.
-         - Netlify: drag index.html на netlify.com/drop.
-         - Vercel/Heroku аналогично. Бесплатно!
-    5. EmailJS: dashboard.emailjs.com → new service → вставь ключи в JS ниже. Получи заявки на почту! 🚀 -->
-
-    <!-- Footer -->
-    <footer id="contact" class="py-12 bg-black">
+    <footer id="contact" class="py-12 bg-black text-white">
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-3xl font-bold mb-8 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
                 Свяжитесь с нами
             </h2>
             <div class="space-y-4 mb-8">
-                <p>📞 +7 (473) 123-45-67</p>
-                <p>✉️ info@oirat-transfer.ru</p>
-                <p>🌐 Из Москвы и Подмосковья круглосуточно в ДНР/ЛНР</p>
+                <a href="tel:+79098930000" class="block text-3xl font-bold text-green-400 hover:text-green-300 transition mb-4">📞 +7 909 893 0000</a>
+                <p class="text-gray-400">Трансфер из Москвы, Тамбова, Тулы, Владимира, Нижнего Новгорода в города зон СВО</p>
             </div>
             <div class="flex justify-center space-x-6">
-                <a href="https://t.me/oirat_transfer" target="_blank" class="text-2xl hover:text-blue-400">Telegram</a>
-                <a href="https://wa.me/79001234567" target="_blank" class="text-2xl hover:text-blue-400">WhatsApp</a>
-                <a href="https://vk.com/oirat_transfer" target="_blank" class="text-2xl hover:text-blue-400">ВКонтакте</a>
+                <a href="https://t.me/oirat_transfer" target="_blank" class="text-2xl hover:text-blue-400 transition transform hover:scale-110">Telegram</a>
+                <a href="https://wa.me/79098930000" target="_blank" class="text-2xl hover:text-green-400 transition transform hover:scale-110">WhatsApp</a>
+                <a href="https://vk.com/oirat_transfer" target="_blank" class="text-2xl hover:text-blue-600 transition transform hover:scale-110">ВКонтакте</a>
             </div>
         </div>
     </footer>
 
-<script src="https://unpkg.com/imask"></script>
-    
-    <script src="config.js"></script>
-    <script src="js/main.js"></script>
+    <a href="tel:+79098930000" class="fixed bottom-6 right-6 w-16 h-16 bg-green-500 hover:bg-green-600 text-white text-3xl rounded-full shadow-2xl flex items-center justify-center z-50 hover:scale-110 transition-all duration-300 animate-pulse">
+        📞
+    </a>
+
+    <script>
+        // CONFIG из твоего файла
+        const CONFIG = {
+            API_URL: "https://script.google.com/macros/s/AKfycbwFp9ZJMnhulXVh3YQFEOpdJ48OEWE5KeMByV9aCmYgr9X_8BHJ5Qkm-fWvsI2ndjBL/exec"
+        };
+
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            // 1. Smooth Scroll
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+
+            // 2. Блокировка прошедших дат (Важная фича из старой версии)
+            const dateInput = document.getElementById('date');
+            if (dateInput) {
+                dateInput.setAttribute('min', new Date().toISOString().split('T')[0]);
+            }
+
+            // 3. Маска телефона (Важная фича из старой версии)
+            const phoneElement = document.getElementById('phone');
+            if (phoneElement) {
+                IMask(phoneElement, { mask: '+{7} (000) 000-00-00' });
+            }
+
+            // 4. Логика отправки формы на Google Script (Backend)
+            const form = document.getElementById('bookingForm');
+            const btn = document.getElementById('submitBtn');
+
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+
+                    const phoneInput = document.getElementById('phone');
+                    // Удаляем всё, кроме цифр, чтобы проверить длину
+                    const cleanPhone = phoneInput.value.replace(/\D/g, '');
+
+                    if (cleanPhone.length < 11) {
+                        alert("Пожалуйста, введите полный номер телефона (11 цифр).");
+                        phoneInput.focus();
+                        return; 
+                    }
+                    
+                    // Блокируем кнопку
+                    const originalText = btn.innerText;
+                    btn.disabled = true;
+                    btn.innerText = "Отправка...";
+                    btn.classList.add('opacity-50', 'cursor-not-allowed');
+
+                    const formData = new FormData(form);
+                    const params = new URLSearchParams();
+
+                    formData.forEach((value, key) => {
+                        params.append(key, value);
+                    });
+
+                    // Добавляем timestamp для уникальности
+                    params.append('timestamp', new Date().toISOString());
+
+                    fetch(`${CONFIG.API_URL}?${params.toString()}`, {
+                        method: 'GET',
+                        mode: 'no-cors' 
+                    })
+                    .then(() => {
+                        // Очистка и успех
+                        form.reset();
+                        alert("✅ Заявка успешно отправлена! Мы свяжемся с вами в ближайшее время.");
+                        // Сброс даты на мин. значение
+                        if (dateInput) dateInput.value = '';
+                    })
+                    .catch(err => {
+                        console.error("Ошибка:", err);
+                        alert("❌ Произошла ошибка при отправке. Пожалуйста, позвоните нам: +7 909 893 0000");
+                    })
+                    .finally(() => {
+                        btn.disabled = false;
+                        btn.innerText = "Отправить заявку";
+                        btn.classList.remove('opacity-50', 'cursor-not-allowed');
+                    });
+                });
+            }
+
+            // 5. Логика калькулятора (Frontend only, просто для удобства)
+            const distances = {
+                'Москва-Донецк': 1100, 'Москва-Луганск': 1050, 'Москва-Горловка': 1080, 
+                'Москва-Мариуполь': 1150, 'default': 1100
+            };
+            
+            const calcForm = document.getElementById('calcForm');
+            if (calcForm) {
+                calcForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const dep = document.getElementById('calcDeparture').value;
+                    const dest = document.getElementById('calcDestination').value;
+                    const cls = document.getElementById('calcClass').value;
+                    const night = document.getElementById('nightTrip').checked;
+                    
+                    if (!dep || !dest || !cls) {
+                        alert('Пожалуйста, выберите все параметры для расчета.');
+                        return;
+                    }
+
+                    const classEl = document.querySelector(`#calcClass option[value="${cls}"]`);
+                    const pricePerKm = parseFloat(classEl.dataset.price);
+                    
+                    // Простая логика дистанции (заглушка)
+                    const routeKey = dep + '-' + dest;
+                    let km = distances[routeKey] || distances['default'];
+                    
+                    let cost = Math.round(km * pricePerKm * (night ? 1.2 : 1));
+                    
+                    document.getElementById('estKm').textContent = `~${km} км`;
+                    document.getElementById('estCost').textContent = `${cost.toLocaleString()} ₽`;
+                    document.getElementById('calcResult').classList.remove('hidden');
+                });
+            }
+        });
+    </script>
 </body>
 </html>
