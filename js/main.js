@@ -24,35 +24,91 @@ document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('bookingForm');
     const btn = document.getElementById('submitBtn');
 
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
+    if (form) {
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
 
-        const formData = new FormData(form);
-        const params = new URLSearchParams();
+            // Правильно собираем все поля
+            const formData = {
+                customerName: document.getElementById('customerName').value.trim(),
+                phone: document.getElementById('phone').value.trim(),
+                departure: document.getElementById('departure').value,
+                destination: document.getElementById('destination').value,
+                date: document.getElementById('date').value,
+                serviceClass: document.getElementById('serviceClass').value,
+                passengers: document.getElementById('passengers').value,
+                message: document.getElementById('message').value.trim(),
+                pickupAddress: document.getElementById('departure').value // дублируем departure
+            };
 
-        // Собираем ВСЕ данные из полей формы
-        params.append('customerName', document.getElementById('name').value);
-        params.append('phone', document.getElementById('phone').value);
-        params.append('departure', document.getElementById('departure').value);
-        params.append('destination', document.getElementById('destination').value);
-        params.append('date', document.getElementById('date').value);
-        params.append('message', document.getElementById('message').value);
+            // Валидация
+            const cleanPhone = formData.phone.replace(/\D/g, '');
+            if (cleanPhone.length < 11) {
+                alert("Пожалуйста, введите полный номер телефона (11 цифр).");
+                return;
+            }
+
+            // Блокируем кнопку
+            btn.disabled = true;
+            btn.innerHTML = 'Отправка...';
+
+            try {
+                // Отправляем POST запрос
+                const response = await fetch(CONFIG.API_URL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: new URLSearchParams(formData).toString()
+                });
+
+                const result = await response.json();
+                
+                if (result.status === "success") {
+                    alert(`✅ Заявка #${result.id} отправлена! Мы свяжемся с вами.`);
+                    form.reset();
+                } else {
+                    alert("❌ Ошибка: " + (result.message || "Не удалось отправить заявку"));
+                }
+            } catch (error) {
+                console.error('Ошибка:', error);
+                alert("❌ Ошибка сети. Попробуйте позвонить: +7 909 893 0000");
+            } finally {
+                btn.disabled = false;
+                btn.innerHTML = 'Отправить заявку';
+            }
+        });
+    }
+
+    // form.addEventListener('submit', function(e) {
+    //     e.preventDefault();
+
+    //     const formData = new FormData(form);
+    //     const params = new URLSearchParams();
+
+    //     // Собираем ВСЕ данные из полей формы
+    //     params.append('customerName', document.getElementById('name').value);
+    //     params.append('phone', document.getElementById('phone').value);
+    //     params.append('departure', document.getElementById('departure').value);
+    //     params.append('destination', document.getElementById('destination').value);
+    //     params.append('date', document.getElementById('date').value);
+    //     params.append('message', document.getElementById('message').value);
         
-        // ВОТ ЭТИ ДВА ПОЛЯ МЫ ТЕРЯЛИ:
-        params.append('serviceClass', document.getElementById('serviceClass').value);
-        params.append('passengers', document.getElementById('passengers').value);
+    //     // ВОТ ЭТИ ДВА ПОЛЯ МЫ ТЕРЯЛИ:
+    //     params.append('serviceClass', document.getElementById('serviceClass').value);
+    //     params.append('passengers', document.getElementById('passengers').value);
 
-        // Отправка (API_URL берется из config.js)
-        fetch(`${CONFIG.API_URL}?${params.toString()}`, {
-            method: 'GET',
-            mode: 'no-cors'
-        })
-        .then(() => {
-            alert("✅ Заявка отправлена!");
-            form.reset();
-        })
-        .catch(err => console.error("Ошибка:", err));
-    });
+    //     // Отправка (API_URL берется из config.js)
+    //     fetch(`${CONFIG.API_URL}?${params.toString()}`, {
+    //         method: 'GET',
+    //         mode: 'no-cors'
+    //     })
+    //     .then(() => {
+    //         alert("✅ Заявка отправлена!");
+    //         form.reset();
+    //     })
+    //     .catch(err => console.error("Ошибка:", err));
+    // });
     
     setTimeout(() => {
         const toast = document.createElement('div');
